@@ -83,7 +83,7 @@ body {
 
 /* Hero tag */
 .header {
-    height: 100vh;
+    height: 88vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,35 +92,36 @@ body {
     animation: fadeInBackground 2s ease-in-out forwards;
 }
   
-  /* Upper Half */
-  .header-upper {
-    height: 50%;
-    background-image: url('hero.png'); /* Replace with your image URL */
+/* Upper Half */
+.header-upper {
+    height: 70%;
+    background-image: url('hero.png'); 
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     position: relative;
     opacity: 0; /* Start hidden for animation */
-    animation: fadeInUpper 2s ease-in-out 0.5s forwards;  }
+    animation: fadeInUpper 2s ease-in-out 0.5s forwards;  
+}
   
-  .header-upper h1 {
+.header-upper h1 {
     font-size: 50px;
     padding: 100px;
     border-radius: 10px;
     margin: 0;
     transform: translateY(-100%); /* Start outside the boundary */
     animation: emergeFromBoundary 2s ease-in-out 1s forwards;
-  }
+}
   
-  .header-upper .highlight {
-    color: #229fb3;
-  }
+.header-upper .highlight {
+    color: #ab6c06;
+}
   
-  /* Lower Half */
-  .header-lower {
-    height: 50%;
+/* Lower Half */
+.header-lower {
+    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,16 +131,15 @@ body {
     opacity: 0; /* Start hidden */
     animation: fadeInLower 2s ease-in-out 0.5s forwards;  }
   
-  .header-lower p {
+.header-lower p {
     font-size: 25px;
     font-weight: bold;
     margin: 10px 0;
-  transform: translateY(100vh); /* Start outside the viewport */
-  animation: slideUpFromBottom 2s ease-in-out 1.5s forwards;
-  }
+    transform: translateY(100vh); /* Start outside the viewport */
+    animation: slideUpFromBottom 2s ease-in-out 1.5s forwards;
+}
 
-  
-  /* Animations */
+/* Animations */
 @keyframes fadeInBackground {
     0% {
       background-color: transparent;
@@ -147,52 +147,43 @@ body {
     100% {
       background-color: rgb(224, 224, 205);
     }
-  }
+}
   
-  @keyframes fadeInUpper {
+@keyframes fadeInUpper {
     0% {
       opacity: 0;
     }
     100% {
       opacity: 1;
     }
-  }
+}
   
-  @keyframes emergeFromBoundary {
+@keyframes emergeFromBoundary {
     0% {
       transform: translateY(-100%);
     }
     100% {
       transform: translateY(0);
     }
-  }
+}
   
-  @keyframes fadeInLower {
+@keyframes fadeInLower {
     0% {
       opacity: 0;
     }
     100% {
       opacity: 1;
     }
-  }
+}
   
-  @keyframes slideUpFromBottom {
+@keyframes slideUpFromBottom {
     0% {
       transform: translateY(100vh);
     }
     100% {
       transform: translateY(0);
     }
-  }
-  
-  @keyframes fadeInButton {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+}
 
 /* Skills Section */
 .skills {
